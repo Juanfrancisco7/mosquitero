@@ -1,65 +1,65 @@
 /* Navegación */
 nav {
-    background-color: #1e1e1e;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px;
-  }
-  
-  nav a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: 500;
-    transition: color 0.3s ease;
-  }
-  
-  nav a:hover {
-    color: #1e88e5;
-  }
-  
-  /* Menú hamburguesa */
+  background-color: #1e1e1e;
+  display: flex;
+  justify-content: center; /* Centra los elementos de navegación */
+  align-items: center;
+  padding: 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #1e88e5;
+}
+
+/* Menú hamburguesa */
+.menu-icon {
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+  display: none; /* Escondemos el icono en pantallas grandes */
+}
+
+/* Enlaces de navegación */
+.nav-links {
+  display: flex;
+  gap: 30px;
+  justify-content: center; /* Asegura que los enlaces estén centrados */
+}
+
+/* Responsivo para móviles */
+@media screen and (max-width: 768px) {
   .menu-icon {
-    font-size: 30px;
-    color: white;
-    cursor: pointer;
-    display: none; /* Escondemos el icono en pantallas grandes */
+    display: block; /* Mostramos el icono del menú hamburguesa en móviles */
   }
-  
-  /* Enlaces de navegación */
+
   .nav-links {
+    display: none; /* Ocultamos los enlaces de navegación en móviles */
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: #1e1e1e;
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .nav-links a {
+    text-align: center;
+    padding: 10px;
+    font-size: 18px;
+    width: 100%;
+  }
+
+  /* Cuando se abre el menú */
+  .nav-links.open {
     display: flex;
-    gap: 30px;
   }
-  
-  /* Responsivo para móviles */
-  @media screen and (max-width: 768px) {
-    .menu-icon {
-      display: block; /* Mostramos el icono del menú hamburguesa en móviles */
-    }
-  
-    .nav-links {
-      display: none; /* Ocultamos los enlaces de navegación en móviles */
-      flex-direction: column;
-      width: 100%;
-      position: absolute;
-      top: 60px;
-      left: 0;
-      background-color: #1e1e1e;
-      padding: 20px;
-      gap: 20px;
-    }
-  
-    .nav-links a {
-      text-align: center;
-      padding: 10px;
-      font-size: 18px;
-      width: 100%;
-    }
-  
-    /* Cuando se abre el menú */
-    .nav-links.open {
-      display: flex;
-    }
-  }
-  
+}
