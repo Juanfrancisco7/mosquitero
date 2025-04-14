@@ -1,3 +1,4 @@
+/* Estilos generales */
 * {
   margin: 0;
   padding: 0;
@@ -39,26 +40,6 @@ header.hero {
 .hero-content p {
   font-size: 16px;
   color: #e0e0e0;
-}
-
-/* Navegación */
-nav {
-  background-color: #1e1e1e;
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  padding: 15px;
-}
-
-nav a {
-  text-decoration: none;
-  color: #fff;
-  font-weight: 500;
-  transition: color 0.3s ease;
-}
-
-nav a:hover {
-  color: #1e88e5;
 }
 
 /* Contenido principal */
@@ -119,26 +100,6 @@ section p {
   font-size: 20px;
   margin-bottom: 8px;
   color: #1e88e5;
-}
-
-/* Lista de ventajas */
-ul {
-  list-style: none;
-  font-size: 16px;
-}
-
-ul li {
-  padding-left: 25px;
-  position: relative;
-  margin-bottom: 12px;
-}
-
-ul li::before {
-  content: "✔";
-  position: absolute;
-  left: 0;
-  color: #1e88e5;
-  font-weight: bold;
 }
 
 /* Formulario */
@@ -254,4 +215,53 @@ footer {
   font-size: 12px;
   color: #666;
   margin-top: 10px;
+}
+
+/* ---- Responsivo ---- */
+
+/* Para pantallas de móvil */
+@media screen and (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px;
+  }
+
+  nav a {
+    font-size: 18px;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    border-bottom: 1px solid #444;
+  }
+
+  nav a:hover {
+    color: #1e88e5;
+  }
+
+  /* Ajustes del contenido principal */
+  main {
+    padding: 20px;
+  }
+
+  section {
+    margin-bottom: 40px;
+  }
+
+  section h2 {
+    font-size: 24px;
+  }
+
+  .producto {
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+
+  .producto img {
+    max-width: 100%;
+  }
+
+  .producto div {
+    padding: 15px;
+  }
 }

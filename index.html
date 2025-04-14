@@ -5,6 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mosquiteros & Ventanas</title>
   <link rel="stylesheet" href="CSS/estilos.css" />
+  <link rel="stylesheet" href="CSS/galerias-trabajos.css" />
+  <link rel="stylesheet" href="CSS/ventajas.css" />
+  <link rel="stylesheet" href="CSS/navegacion.css" />
+  <link rel="stylesheet" href="CSS/cookies.css" />
+
+  <!-- SwiperJS CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 </head>
 <body>
 
@@ -16,12 +23,18 @@
   </header>
 
   <nav>
-    <a href="#nosotros">Nosotros</a>
-    <a href="#productos">Productos</a>
-    <a href="#ventajas">Ventajas</a>
-    <a href="#galeria">Galería</a>
-    <a href="#contacto">Contacto</a>
+    <div class="menu-icon" id="menu-icon">
+      &#9776; <!-- Ícono del menú hamburguesa -->
+    </div>
+    <div class="nav-links" id="nav-links">
+      <a href="#nosotros">Nosotros</a>
+      <a href="#productos">Productos</a>
+      <a href="#ventajas">Ventajas</a>
+      <a href="#galeria">Galería</a>
+      <a href="#contacto">Contacto</a>
+    </div>
   </nav>
+  
 
   <main>
     <section id="nosotros">
@@ -57,13 +70,31 @@
 
     <section id="ventajas">
       <h2>¿Por Qué Elegirnos?</h2>
-      <ul>
-        <li>✔ Asesoría personalizada.</li>
-        <li>✔ Instalación rápida y limpia.</li>
-        <li>✔ Diseño moderno y funcional.</li>
-        <li>✔ Garantía en todos los productos.</li>
-        <li>✔ Atención postventa.</li>
+      <ul class="ventajas-list">
+        <li class="ventaja-item">✔ Asesoría personalizada.</li>
+        <li class="ventaja-item">✔ Instalación rápida y limpia.</li>
+        <li class="ventaja-item">✔ Diseño moderno y funcional.</li>
+        <li class="ventaja-item">✔ Garantía en todos los productos.</li>
+        <li class="ventaja-item">✔ Atención postventa.</li>
       </ul>
+    </section>
+    
+
+    <section class="galeria-trabajos">
+      <h2>Trabajos Realizados</h2>
+      <div class="swiper trabajosSwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="img/persiana.jpg" alt="Trabajo 1" /></div>
+          <div class="swiper-slide"><img src="img/persiana2.jpg" alt="Trabajo 2" /></div>
+          <div class="swiper-slide"><img src="img/moquitero2.jpg" alt="Trabajo 3" /></div>
+          <div class="swiper-slide"><img src="img/mosquitero.jpg" alt="Trabajo 4" /></div>
+          <!-- Agrega más imágenes si lo deseas -->
+        </div>
+        <!-- Controles -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
     </section>
 
     <section id="contacto">
@@ -142,11 +173,48 @@
       </div>
     </div>
   </section>
-  
 
   <footer>
     <p>&copy; 2025 Mosquiteros & Ventanas. Todos los derechos reservados.</p>
   </footer>
+
+  <div id="cookieConsent">
+    <div class="cookie-container">
+        <p>Usamos cookies para mejorar tu experiencia. Puedes aceptar o rechazar las cookies. <a href="#" id="manageCookies">Gestionar cookies</a></p>
+        <button id="acceptCookies">Aceptar</button>
+        <button id="rejectCookies">Rechazar</button>
+    </div>
+    <div id="cookieSettings" class="cookie-settings">
+        <h2>Gestiona tus preferencias de cookies</h2>
+        <p>Selecciona las cookies que deseas activar.</p>
+        <label>
+            <input type="checkbox" id="necessaryCookies" checked disabled> Cookies necesarias
+        </label>
+        <br>
+        <label>
+            <input type="checkbox" id="preferencesCookies"> Cookies de preferencias
+        </label>
+        <br>
+        <label>
+            <input type="checkbox" id="analyticsCookies"> Cookies de análisis
+        </label>
+        <br>
+        <button id="saveCookies">Guardar preferencias</button>
+        <button id="closeSettings">Cerrar</button>
+    </div>
+</div>
+
+
+  
+
+  <!-- SwiperJS JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- JS -->
+  <script src="js/galeria.js"></script>
+  <script src="js/ventajas.js"></script>
+  <script src="js/navegacion.js"></script>
+  <script src="js/cookies.js"></script>
 
 </body>
 </html>

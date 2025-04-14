@@ -1,0 +1,53 @@
+#ventajas {
+    padding: 60px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  #ventajas h2 {
+    font-size: 40px;
+    color: #333;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: opacity 6s ease, transform 6s ease; /* Aumentamos el tiempo de transición */
+  }
+  
+  .ventajas-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .ventaja-item {
+    font-size: 20px;
+    margin: 15px 0;
+    color: #333;
+    font-weight: bold;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 6s ease, transform 6s ease; /* Aumentamos el tiempo de transición */
+  }
+  
+  .ventaja-item.appear {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  #ventajas ul {
+    display: grid;
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    justify-items: center;
+  }
+  
+  /* Animación para el título */
+  #ventajas h2.appear {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  

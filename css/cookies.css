@@ -1,0 +1,119 @@
+/* Estilos generales */
+#cookieConsent {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #222;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    display: none; /* Inicialmente oculto */
+    z-index: 9999;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.cookie-container p {
+    margin: 0;
+    padding: 0 0 15px;
+    font-size: 14px;
+}
+
+.cookie-container button {
+    background: #28a745; /* Un verde suave para aceptar */
+    color: #fff;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 50px;
+    margin: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.cookie-container button:hover {
+    background: #218838; /* Un verde más oscuro para hover */
+    transform: scale(1.05);
+}
+
+.cookie-container button:focus {
+    outline: none;
+}
+
+/* Estilo del enlace "Gestionar cookies" */
+#manageCookies {
+    color: #1e88e5; /* Azul elegante */
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+#manageCookies:hover {
+    color: #166bb3; /* Azul más oscuro para el hover */
+    transform: scale(1.05);
+}
+
+/* Estilo para el panel de configuración de cookies */
+.cookie-settings {
+    display: none;
+    background: #fff;
+    color: #333;
+    padding: 25px;
+    border-radius: 12px;
+    margin-top: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+.cookie-settings h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+.cookie-settings p {
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.cookie-settings label {
+    display: block;
+    margin: 8px 0;
+    font-size: 14px;
+    color: #333;
+}
+
+.cookie-settings input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.cookie-settings button {
+    background: #1e88e5; /* Azul suave para guardar preferencias */
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 50px;
+    margin: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.cookie-settings button:hover {
+    background: #166bb3; /* Azul más oscuro en hover */
+}
+
+.cookie-settings button:focus {
+    outline: none;
+}
+
+.cookie-settings button#closeSettings {
+    background: #f44336; /* Rojo suave para cerrar */
+}
+
+.cookie-settings button#closeSettings:hover {
+    background: #d32f2f; /* Rojo más oscuro en hover */
+}
