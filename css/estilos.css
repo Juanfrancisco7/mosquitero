@@ -43,33 +43,6 @@ header.hero {
   color: #e0e0e0;
 }
 
-/* Productos */
-.producto {
-  display: flex;
-  flex-wrap: wrap;
-  background-color: #fff;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-  margin-bottom: 30px;
-  overflow: hidden;
-}
-
-.producto img {
-  width: 100%;
-  max-width: 350px;
-  object-fit: cover;
-}
-
-.producto div {
-  padding: 20px;
-  flex: 1;
-}
-
-.producto h3 {
-  font-size: 20px;
-  margin-bottom: 8px;
-  color: #1e88e5;
-}
 
 /* Formulario */
 form {
